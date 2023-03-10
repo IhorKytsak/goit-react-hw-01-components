@@ -3,25 +3,27 @@ import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
-import user from '../data/user.json';
+import userData from '../data/user.json';
 import statisticData from '../data/data.json';
-import friends from '../data/friends.json';
-import transactions from '../data/transactions.json';
+import friendsData from '../data/friends.json';
+import transactionsData from '../data/transactions.json';
 
 export const App = () => {
+  const { username, tag, location, avatar, stats } = userData;
+
   return (
     <>
       <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        stats={stats}
       />
       <Statistics title="Upload Stats" stats={statisticData} />
       <Statistics stats={statisticData} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />;
+      <FriendList friends={friendsData} />
+      <TransactionHistory items={transactionsData} />;
     </>
   );
 };

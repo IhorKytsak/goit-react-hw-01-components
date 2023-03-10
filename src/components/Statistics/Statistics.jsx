@@ -7,7 +7,7 @@ import { getRandomColor } from '../../helpers/randomColor';
 import styles from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
-  const itemsList = stats.map(item => (
+  const statList = stats.map(item => (
     <StatisticItem
       key={item.id}
       label={item.label}
@@ -20,9 +20,7 @@ const Statistics = ({ title, stats }) => {
     <section className={styles.statistics}>
       {title && <h2 className={styles.title}>{title}</h2>}
 
-      <ul className={styles.statList}>
-        {itemsList}
-      </ul>
+      <ul className={styles.statList}>{statList}</ul>
     </section>
   );
 };
