@@ -1,0 +1,8 @@
+.stats {
+  display: flex;
+  width: 350px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(243 246 249);
+  border: 1px solid rgb(228 234 240);
+}

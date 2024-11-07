@@ -1,0 +1,29 @@
+.description {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  border: 1px solid rgb(228 234 240);
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.tag,
+.location {
+  color: rgb(178 184 192);
+  padding: 5px;
+}
